@@ -1,0 +1,18 @@
+<table>
+  <tr>
+    <table>
+      <td>username</td>
+      <td><input type='text' [(ngModel)]='username'/></td>
+    </table>
+  </tr>
+  <tr>
+    <table>
+      <td>password</td>
+      <td><input type='text' [(ngModel)]='password'/></td>
+    </table>
+  </tr>
+</table>
+<div>
+  <button type='button' (click)='login()'>login</button>
+  <div *ngIf='error'>{{error}}</div>
+</div>

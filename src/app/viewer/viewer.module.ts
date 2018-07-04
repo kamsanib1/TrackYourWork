@@ -7,6 +7,10 @@ import { SimpleDropdownComponent } from './simple-dropdown/simple-dropdown.compo
 import { DateDropdownComponent } from './date-dropdown/date-dropdown.component';
 import { ViewerComponent } from './viewer/viewer.component';
 import { RouterModule } from '@angular/router';
+import { QueryDetailComponent } from './query-detail/query-detail.component';
+import { QueryDisplayComponent } from './query-display/query-display.component';
+import { RedirectComponent } from './redirect/redirect.component';
+import { EditableComponent } from './editable/editable.component';
 
 
 @NgModule({
@@ -17,11 +21,24 @@ import { RouterModule } from '@angular/router';
       { path:'viewer', component:ViewerComponent }
     ])
   ],
-  declarations: [FilterViewComponent, SimpleDropdownComponent, DateDropdownComponent, ViewerComponent],
+  declarations: [
+    FilterViewComponent, 
+    SimpleDropdownComponent, 
+    DateDropdownComponent, 
+    ViewerComponent,
+    QueryDetailComponent,
+    QueryDisplayComponent,
+    RedirectComponent,
+    EditableComponent
+  ],
   exports:[
     FilterViewComponent,
     SimpleDropdownComponent,
-    DateDropdownComponent
+    DateDropdownComponent,
+    QueryDetailComponent,
+    QueryDisplayComponent,
+    RedirectComponent,
+    EditableComponent
   ]
 })
 export class ViewerModule { }

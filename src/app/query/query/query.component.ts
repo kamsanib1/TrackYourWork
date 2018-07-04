@@ -12,4 +12,5 @@ export class QueryComponent implements OnInit {
   ngOnInit() {
   }
 
+
 }

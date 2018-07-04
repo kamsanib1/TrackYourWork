@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output } from '@angular/core';
 import { NgModel } from '@angular/forms';
 
 @Component({
@@ -11,6 +11,9 @@ export class LoginComponent implements OnInit {
   username:String;
   password:String;
   error:String;
+
+  @Output() signup:any;
+  
   constructor() { }
 
   ngOnInit() {

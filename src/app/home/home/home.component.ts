@@ -8,6 +8,7 @@ import { SignupComponent } from '../signup/signup.component';
 })
 export class HomeComponent implements OnInit {
 
+  login:boolean = true;
   constructor() { }
 
   ngOnInit() {

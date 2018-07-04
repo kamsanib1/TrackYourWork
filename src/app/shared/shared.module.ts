@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {MenuItemComponent} from './menu-item/menu-item.component';
 import { FormsModule } from '@angular/forms';
+import { EditableComponent } from './editable/editable.component';
 
 @NgModule({
   imports: [
@@ -9,10 +10,12 @@ import { FormsModule } from '@angular/forms';
     FormsModule
   ],
   declarations: [
-    MenuItemComponent
+    MenuItemComponent,
+    EditableComponent
   ],
   exports:[
-    MenuItemComponent
+    MenuItemComponent,
+    EditableComponent
   ]
 })
 export class SharedModule { }
